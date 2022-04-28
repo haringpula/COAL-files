@@ -1,0 +1,13 @@
+00000: 0011 000000000000  ; read input to acc
+00010: 1010 000000010010  ; jump to Done if n<0
+00100: 0010 000000011000  ; store prod to acc
+00110: 1001 000000001000  ; jump to Start (01000)
+01000: 0011 000000000000  ; read n to acc
+01010: 1010 000000010010  ; jump to Done if n < 0.
+01100: 0111 000000011000  ; multiply prod to the acc
+01110: 0010 000000011000  ; store the new prod
+10000: 1001 000000001000  ; go back & read in next num
+10010: 0001 000000011000  ; load the final prod
+10100: 0100 000000000000  ; write the final prod
+10110: 0000 000000000000  ; stop
+11000: 0000 000000000000  ; 2-byte location where prod is stored

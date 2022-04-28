@@ -1,0 +1,9 @@
+This program takes a negative integer and output its positive equivalent, it will not end unless the input is negative
+
+00000:   0011 000000000000 ; read input to acc
+00010:   1011 000000000110 ; jmpn to 00110 if acc < 0
+00100:   1001 000000000000 ; jump to Start (00000)
+00110:   0111 000000001100 ; multiply 1100
+01000:   0100 000000000000 ; write
+01010:   0000 000000000000 ; stop
+01100:   1111111111111111  ; stated -1

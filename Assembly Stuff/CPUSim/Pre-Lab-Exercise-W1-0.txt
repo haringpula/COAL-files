@@ -1,0 +1,20 @@
+ location              opcode             address
+
+      00000:    0011 000000000000   ; read n -> acc
+
+      00010:    1010 000000001110   ; jump to address 01110 if n = 0.
+
+     00100:    0111 000000010000   ; multiply n to the product (at address 10000)
+
+      00110:    0010 000000010000   ; store the new product
+
+      01000:    1001 000000000000   ; go back & read in the next number
+
+      01010:    0001 000000010000   ; load the final product
+
+      01100:    0100 000000000000   ; output the final product
+
+      01110:    0000 000000000000   ; stop
+
+      10000:    0000 000000000000   ; location where the product is stored
+
